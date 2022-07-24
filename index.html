@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/3401d03427.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container py-2 px-4 bg-white m-2 shadow">
+        <div class="row head">
+            <div class="col-12">
+                <h2 class="text-center">Image Editor</h2>
+            </div>
+        </div>
+        <div class="row content p-2">
+            <div class="col-md-6 border m-md-0 m-2 mb-2 order-md-0 order-1">
+                <div class="row filter-title">
+                    <div class="col-12 filter-head">
+                        <h6 class="py-3">Filters</h6>
+                    </div>
+                </div>
+                <div class="row filter-controls">
+                    <div class="col-6 filter-btn active">
+                        <button class="w-100 mb-3 py-2 filter-btn">Brightness</button>
+                    </div>
+                    <div class="col-6 filter-btn">
+                        <button class="w-100 mb-3 py-2 filter-btn">Saturation</button>
+                    </div>
+                    <div class="col-6 filter-btn">
+                        <button class="w-100 mb-3 py-2 filter-btn">Inversion</button>
+                    </div>
+                    <div class="col-6 filter-btn">
+                        <button class="w-100 mb-3 py-2 filter-btn">Grayscale</button>
+                    </div>
+                </div>
+                <div class="row range-controls my-3">
+                    <div class="col-8 range-text lh-1">
+                        <p>Brightness</p>
+                    </div>
+                    <div class="col-4 range-percent lh-1">
+                        <p class="" style="text-align: right;">100%</p>
+                    </div>
+                    <div class="col-12 range-value">
+                        <input type="range" name="" id="" class="w-100" max="200" min="0">
+                    </div>
+                </div>
+                <div class="row rotate my-4">
+                    <div class="col-12 rotate-head">
+                        <h5>Rotate & Flip</h5>
+                    </div>
+                    <div class="col-3 rotate-btn">
+                        <button class="w-100 py-2"><i class="fa-solid fa-rotate-left"></i></button>
+                    </div>
+                    <div class="col-3 rotate-btn">
+                        <button class="w-100 py-2"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div> 
+                    <div class="col-3 rotate-btn">
+                        <button class="w-100 py-2"><i class="fa-solid fa-caret-left"></i></button>
+                    </div> 
+                    <div class="col-3 rotate-btn">
+                        <button class="w-100 py-2"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6  preview-img-box order-md-1 order-0 mb-md-0 mb-4">
+                <img src="./images/Asian elephant.jpg" alt="" class="preview-img ">
+            </div>
+        </div>
+        <div class="row buttons d-flex justify-content-between py-3 align-items-center">
+           <div class="col-lg-2 col-md-3 reset-btn my-md-0 my-2">
+              <button class="w-100 py-2">RESET FILTERS</button>
+           </div>
+           <div class="col-lg-2 col-md-3 offset-lg-6 offset-md-3 reset-btn  my-md-0 my-2">
+               <button class="w-100 py-2">Choose Image</button>
+            </div>
+            <div class="col-lg-2 col-md-3 reset-btn my-md-0 my-2">
+               <button class="w-100 py-2" >Save Image</button>
+           </div>
+        </div>
+        
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
